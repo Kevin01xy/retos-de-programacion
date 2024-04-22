@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingresa la cantidad de números de la secuencia Fibonacci a mostrar: ");
+        int n = sc.nextInt();
+        int inicialNumber = 0;
+        int secondNumber = 1;
+        int thirdNumber;
+
+        for(int i =1;i<=n;i++){
+            thirdNumber = inicialNumber;
+            inicialNumber = inicialNumber + secondNumber;
+            secondNumber = thirdNumber;
+            System.out.println(secondNumber);
+        }
+    }
+}
